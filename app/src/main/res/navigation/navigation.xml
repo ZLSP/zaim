@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.zaimutest777.zaim.main_fragments.StartFragment"
+        android:label="Подтвердите ваше согласие"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_phoneFragment"
+            app:destination="@id/phoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.zaimutest777.zaim.main_fragments.PrivacyFragment"
+        android:label="Политика конфеденциальности"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="com.zaimutest777.zaim.main_fragments.PhoneFragment"
+        android:label="Подтверждение согласия"
+        tools:layout="@layout/fragment_phone" />
+</navigation>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">zaim</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="f_start_text">
+
+    </string>
+    <string name="f_start_privacy"><u>Политикой конфедециальности</u></string>
+</resources>
